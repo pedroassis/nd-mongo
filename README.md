@@ -14,10 +14,11 @@ You also need [node-dependency](https://github.com/pedroassis/node-dependency) a
 # How it works  
 
 This plugin will depend upon 'MongoModels', so you need to create a file to expose this dependency.  
+You can inject a dependency `Mongoose` which is the mongoose object.  
 
 MongoModels.js
 ```js
-function MongoModels () {
+function MongoModels (Mongoose) {
     return [{
         schema : {
             name : String
