@@ -56,10 +56,21 @@ After loading this Object, nd-mongo will setup a few urls to access the Collecti
 
 # URLs
 
-Get all Documents: `/user/` with method GET - Optional limit and offset url parameters
-Update a Document: `/user/` with method PUT, requires a request body - The body should contain _id prop and the properties to update
-Create a Document: `/user/` with method POST, requires a request body - The body will be saved as a new Document
-Get by ID: `/user/:id` with method GET, requires id
-Delete a Document: `/user/:id` with method DELETE, requires id of the Document to be deleted
-Find Documents: `/user/find` with method POST, requires a request body which will be used as a mongoose query - Optional limit and offset url parameters
+**Get all Documents:**  
+`/user/` with method GET - Optional limit and offset url parameters  
+
+**Update a Document:**  
+`/user/` with method PUT, requires a request body - The body should contain _id prop and the properties to update  
+
+**Create a Document:**  
+`/user/` with method POST, requires a request body - The body will be saved as a new Document  
+ 
+**Get by ID:**  
+`/user/:id` with method GET, requires id  
+
+**Delete a Document:**  
+`/user/:id` with method DELETE, requires id of the Document to be deleted
+ 
+**Find Documents:**  
+`/user/find` with method POST, requires a request body which will be used as a mongoose query - Optional limit and offset url parameters  
 
