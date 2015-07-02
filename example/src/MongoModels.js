@@ -2,7 +2,7 @@
 function MongoModels () {
     return [{
         schema : {
-            field : String
+            name : String
         },
         name : "User",
         url : "/user"

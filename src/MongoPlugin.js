@@ -73,7 +73,7 @@ function MongoPlugin (MongoModels, ExpressPlugin, CollectionHandler, Metadata, M
         method.parameters = ['body', 'query'];
         method.annotations.Post = {};
         method.annotations.Post.name = 'Post';
-        method.annotations.Post.value = '/';
+        method.annotations.Post.value = '/find';
         return method;
     };
 

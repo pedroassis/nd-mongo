@@ -1,6 +1,6 @@
 {
   "name": "nd-mongo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node-dependency plugin to help expose mongoose's collections on a HTTP interface",
   "main": "index.js",
   "scripts": {

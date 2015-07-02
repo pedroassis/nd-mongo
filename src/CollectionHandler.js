@@ -41,7 +41,7 @@ function CollectionHandler(Model) {
     };
     
     this.update = function(body) {
-        var $id = body.id;
+        var $id = body._id;
         return Model
                 .update({
                     _id : $id
