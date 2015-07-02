@@ -58,24 +58,28 @@ After loading this Object, nd-mongo will setup a few urls to access the Collecti
 # URLs
 
 **Get all Documents:**  
-`/user/` with method GET - Optional limit and offset url parameters  
+`/user/`  
+with method GET - Optional limit and offset url parameters  
 Example:
 ```
     curl -H "Content-Type: application/json" -X GET http://localhost:9999/user?limit=1&offset=2
 ```
 
 **Update a Document:**  
-`/user/` with method PUT, requires a request body - The body should contain _id prop and the properties to update  
+`/user/`  
+with method PUT, requires a request body - The body should contain _id prop and the properties to update  
 
 **Create a Document:**  
-`/user/` with method POST, requires a request body - The body will be saved as a new Document  
+`/user/`  
+with method POST, requires a request body - The body will be saved as a new Document  
 Example:
 ```
     curl -H "Content-Type: application/json" -X POST -d '{"name":"Soem Name"}' http://localhost:9999/user/
 ```
  
 **Get by ID:**  
-`/user/:id` with method GET, requires id  
+`/user/:id`  
+with method GET, requires id  
 Example:
 ```
     // This will get the Document with _id `559563e4670059eb769fdbd3`
@@ -83,7 +87,8 @@ Example:
 ```
 
 **Delete a Document:**  
-`/user/:id` with method DELETE, requires id of the Document to be deleted
+`/user/:id`  
+with method DELETE, requires id of the Document to be deleted
 Example:
 ```
     // This will delete the Document with _id `559563e4670059eb769fdbd3`
@@ -91,7 +96,8 @@ Example:
 ```
  
 **Find Documents:**  
-`/user/find` with method POST, requires a request body which will be used as a mongoose query - Optional limit and offset url parameters  
+`/user/find`  
+with method POST, requires a request body which will be used as a mongoose query - Optional limit and offset url parameters  
 Example:
 ```
     // This will query for all Documents with name 'Some Name'
