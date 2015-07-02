@@ -39,7 +39,7 @@ A Collection Definition:
   url - the url appended to the server's base url
 ```
 
-The following Object defines a Collection named 'User' to be served at <base_url>/user with the Schema property name of type String.
+The following Object defines a Collection named 'User' to be served at <base_url>/user with the Schema with a property name of type String.
 
 ```js
 {
