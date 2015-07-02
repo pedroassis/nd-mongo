@@ -9,7 +9,7 @@
   "author": "Pedro Assis <pedro@pedroassis.com.br> (https://github.com/pedroassis)",
   "license": "ISC",
   "dependencies": {
-    "nd-express-plugin": "0.0.5",
+    "nd-express-plugin": "*",
     "nd-mongo": "*",
     "node-dependency": "*"
   },
